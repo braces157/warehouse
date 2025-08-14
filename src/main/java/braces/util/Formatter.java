@@ -12,10 +12,6 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- *
- * @author atuandev
- */
 public class Formatter {
 
     private static final Pattern FORMAT_PATTERN = Pattern.compile("^\\d{1,3}([a-zA-Z]+|\\.\\d{1,2}[\\D]+$)");
