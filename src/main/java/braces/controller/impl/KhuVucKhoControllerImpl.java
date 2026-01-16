@@ -60,7 +60,6 @@ public class KhuVucKhoControllerImpl implements KhuVucKhoController {
         }
     }
 
-    @Override
     public List<KhuVucKho> getSearchTable(String text, String searchType) {
         text = text.toLowerCase();
         List<KhuVucKho> result = new ArrayList<>();

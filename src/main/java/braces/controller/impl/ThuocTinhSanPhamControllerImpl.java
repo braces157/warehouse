@@ -7,7 +7,6 @@ package braces.controller.impl;
 
 import braces.dao.ThuocTinhSanPhamDAO;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Optional;
 
 import braces.controller.ThuocTinhSanPhamController;
@@ -68,8 +67,4 @@ public class ThuocTinhSanPhamControllerImpl implements ThuocTinhSanPhamControlle
         }
     }
     
-    @Override
-    public List<ThuocTinhSanPham> getSearchTable(String text, String searchType) {
-       return null;
-    }
 }

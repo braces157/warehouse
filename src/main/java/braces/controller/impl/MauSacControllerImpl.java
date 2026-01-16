@@ -24,9 +24,6 @@ public class MauSacControllerImpl implements MauSacController {
         this.mauSacDAO = mauSacDAO;
     }
 
-    public MauSacControllerImpl() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
     @Override
     public List<MauSac> getAll() {
@@ -64,37 +61,4 @@ public class MauSacControllerImpl implements MauSacController {
         }
     }
 
-    @Override
-    public List<MauSac> getSearchTable(String text, String searchType) {
-        text = text.toLowerCase();
-        List<MauSac> result = new ArrayList<>();
-
-        switch (searchType) {
-            case "Tất cả" -> {
-                for (MauSac e : this.getAll()) {
-                    if ((e.getMaMau() != null && e.getMaMau().toString().toLowerCase().contains(text))
-                            || (e.getTenMau() != null && e.getTenMau().toLowerCase().contains(text))) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã màu" -> {
-                for (MauSac e : this.getAll()) {
-                    if (e.getMaMau() != null && e.getMaMau().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Tên màu" -> {
-                for (MauSac e : this.getAll()) {
-                    if (e.getTenMau() != null && e.getTenMau().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            default ->
-                throw new AssertionError("Unknown search type: " + searchType);
-        }
-        return result;
-    }
 }

@@ -12,10 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- *
- * @author Braces
- */
+
 public class PhienBanControllerImpl implements PhienBanController {
     
     private final PhienBanDAO phienBanDAO;
@@ -69,85 +66,5 @@ public class PhienBanControllerImpl implements PhienBanController {
         }
     }
     
-    @Override
-    public List<PhienBan> getSearchTable(String text, String searchType) {
-        text = text.toLowerCase();
-        List<PhienBan> result = new ArrayList<>();
-        
-        switch (searchType) {
-            case "Tất cả" -> {
-                for (PhienBan e : this.getAll()) {
-                    if ((e.getMaPhienBanSP() != null && e.getMaPhienBanSP().toLowerCase().contains(text))
-                            || (e.getMaSP() != null && e.getMaSP().toString().toLowerCase().contains(text))
-                            || (e.getMauSac() != null && e.getMauSac().toString().toLowerCase().contains(text))
-                            || (e.getMaRam() != null && e.getMaRam().toString().toLowerCase().contains(text))
-                            || (e.getMaRom() != null && e.getMaRom().toString().toLowerCase().contains(text))
-                            || (e.getSoLuongTon() != null && e.getSoLuongTon().toString().toLowerCase().contains(text))
-                            || (e.getGiaBan() != null && e.getGiaBan().toString().toLowerCase().contains(text))
-                            || (e.getGiaNhap() != null && e.getGiaNhap().toString().toLowerCase().contains(text))) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã phiên bản" -> {
-                for (PhienBan e : this.getAll()) {
-                    if (e.getMaPhienBanSP() != null && e.getMaPhienBanSP().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã sản phẩm" -> {
-                for (PhienBan e : this.getAll()) {
-                    if (e.getMaSP() != null && e.getMaSP().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Màu sắc" -> {
-                for (PhienBan e : this.getAll()) {
-                    if (e.getMauSac() != null && e.getMauSac().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "RAM" -> {
-                for (PhienBan e : this.getAll()) {
-                    if (e.getMaRam() != null && e.getMaRam().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "ROM" -> {
-                for (PhienBan e : this.getAll()) {
-                    if (e.getMaRom() != null && e.getMaRom().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Số lượng tồn" -> {
-                for (PhienBan e : this.getAll()) {
-                    if (e.getSoLuongTon() != null && e.getSoLuongTon().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Giá bán" -> {
-                for (PhienBan e : this.getAll()) {
-                    if (e.getGiaBan() != null && e.getGiaBan().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Giá nhập" -> {
-                for (PhienBan e : this.getAll()) {
-                    if (e.getGiaNhap() != null && e.getGiaNhap().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            default ->
-                throw new AssertionError("Unknown search type: " + searchType);
-        }
-        return result;
-    }
+  
 }

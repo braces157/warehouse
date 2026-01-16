@@ -59,6 +59,7 @@ public class EditClientDialog extends javax.swing.JDialog {
         }
 
         if (page.getCt().findBySdt(txtSdt.getText()).isPresent()) {
+            if (page.getCt().findBySdt(txtSdt.getText()).get().getMaKH() == this.kh.getMaKH()) return true; 
             MessageDialog.warring(this, "Số điện thoại đã tồn tại");
             return false;
         }
@@ -101,6 +102,7 @@ public class EditClientDialog extends javax.swing.JDialog {
         btnEdit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Sửa thông tin khách hàng");
         setPreferredSize(new java.awt.Dimension(600, 400));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));

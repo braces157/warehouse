@@ -5,6 +5,7 @@ braces\gui\dialog\RAMDialog$2.class
 braces\gui\page\PropertiesPage$1.class
 braces\gui\dialog\ROMDialog.class
 braces\entity\SanPham$SanPhamBuilder.class
+braces\gui\dialog\ColorDialog$8.class
 braces\gui\dialog\InfoClientDialog.class
 braces\gui\page\SupplierPage$3.class
 braces\gui\page\HomePage.class
@@ -28,6 +29,7 @@ braces\gui\dialog\ROMDialog$2.class
 braces\controller\impl\ThuocTinhSanPhamControllerImpl.class
 braces\gui\page\ExportPage$2.class
 braces\gui\dialog\EditWarehouseDialog$3.class
+braces\gui\dialog\ColorDialog$8$1.class
 braces\gui\page\ImportPage$4.class
 braces\gui\page\CreateImportBillPage$9.class
 braces\gui\dialog\ModelDialog$1.class
@@ -62,6 +64,7 @@ braces\gui\page\DailyStatsPage$2.class
 braces\gui\page\ProductPage$7.class
 braces\controller\impl\DungLuongROMControllerImpl.class
 braces\gui\dialog\EditSupplierDialog$1.class
+braces\gui\dialog\ModelDialog$9$1.class
 braces\gui\dialog\EditSupplierDialog.class
 braces\gui\page\YearlyStatsPage$1.class
 braces\dao\KhuVucKhoDAO.class
@@ -82,6 +85,7 @@ braces\gui\dialog\PropertiesDialog$3.class
 braces\dao\impl\LichSuDAOImpl.class
 braces\gui\dialog\EditPasswordDialog$2.class
 braces\gui\dialog\InfoSupplierDialog$1.class
+braces\gui\dialog\RAMDialog$8$1.class
 braces\gui\chart\blankchart\NiceScale.class
 braces\gui\dialog\DetailImportBill.class
 braces\gui\page\CreateImportBillPage$13.class
@@ -110,6 +114,7 @@ braces\gui\dialog\EditProductDialog$1.class
 braces\gui\dialog\DetailImportBill$3.class
 braces\gui\dialog\EditClientDialog$3.class
 braces\gui\dialog\InfoEmployeeDialog$2.class
+braces\gui\dialog\ModelDialog$9.class
 braces\gui\dialog\EditWarehouseDialog.class
 braces\gui\page\EmployeePage$3.class
 braces\gui\dialog\EditWarehouseDialog$3$1.class
@@ -143,7 +148,6 @@ braces\gui\page\CreateImportBillPage$1.class
 braces\entity\CTPhieuXuat$CTPhieuXuatBuilder.class
 braces\gui\LoadingScreen.class
 braces\gui\dialog\EditClientDialog$2.class
-braces\gui\dialog\ModelDialog$8$1.class
 braces\gui\dialog\DetailImportBill$4.class
 braces\dao\impl\ThuocTinhSanPhamDAOImpl.class
 braces\gui\page\CreateImportBillPage$2.class
@@ -156,7 +160,6 @@ braces\gui\chart\blankchart\BlankPlotChart.class
 braces\controller\BaseController.class
 braces\gui\page\SupplierPage$6.class
 braces\gui\LoadingScreen$2$1.class
-braces\gui\dialog\RAMDialog$7$1.class
 braces\dao\NhaCungCapDAO.class
 braces\entity\PhieuXuat.class
 braces\dao\PhienBanDAO.class
@@ -238,6 +241,7 @@ braces\gui\page\WarehousePage$3.class
 braces\util\MessageDialog.class
 braces\gui\dialog\CreateProductDialog$4.class
 braces\dao\impl\TaiKhoanDAOImpl.class
+braces\gui\dialog\RAMDialog$8.class
 braces\gui\dialog\ROMDialog$1.class
 braces\gui\page\CreateImportBillPage$17.class
 braces\gui\page\CreateExportBillPage$6.class
@@ -320,7 +324,6 @@ braces\entity\TaiKhoan.class
 braces\gui\page\CreateImportBillPage$7.class
 braces\gui\chart\blankchart\BlankPlotChatRender.class
 braces\gui\dialog\CreateEmployeeDialog$2.class
-braces\gui\dialog\ColorDialog$7$1.class
 braces\util\Validation.class
 braces\util\XJdbc.class
 braces\gui\page\ProductPage$11.class

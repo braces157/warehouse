@@ -76,53 +76,5 @@ public class CTPhieuXuatControllerImpl implements CTPhieuXuatController {
     }
     
     
-    @Override
-    public List<CTPhieuXuat> getSearchTable(String text, String searchType) {
-        text = text.toLowerCase();
-        List<CTPhieuXuat> result = new ArrayList<>();
-        
-        switch (searchType) {
-            case "Tất cả" -> {
-                for (CTPhieuXuat e : this.getAll()) {
-                    if ((e.getMaPhieuXuat() != null && e.getMaPhieuXuat().toString().toLowerCase().contains(text))
-                            || (e.getMaPhienBan() != null && e.getMaPhienBan().toLowerCase().contains(text))
-                            || (e.getSoLuong() != null && e.getSoLuong().toString().toLowerCase().contains(text))
-                            || (e.getDonGia() != null && e.getDonGia().toString().toLowerCase().contains(text))) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã phiếu xuất" -> {
-                for (CTPhieuXuat e : this.getAll()) {
-                    if (e.getMaPhieuXuat() != null && e.getMaPhieuXuat().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã phiên bản" -> {
-                for (CTPhieuXuat e : this.getAll()) {
-                    if (e.getMaPhienBan() != null && e.getMaPhienBan().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Số lượng" -> {
-                for (CTPhieuXuat e : this.getAll()) {
-                    if (e.getSoLuong() != null && e.getSoLuong().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Đơn giá" -> {
-                for (CTPhieuXuat e : this.getAll()) {
-                    if (e.getDonGia() != null && e.getDonGia().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            default ->
-                throw new AssertionError("Unknown search type: " + searchType);
-        }
-        return result;
-    }
+ 
 }

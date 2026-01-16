@@ -410,9 +410,13 @@ public class ProductPage extends javax.swing.JPanel {
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         try {
             int row = table.getSelectedRow();
+            if (row == -1) {
+                MessageDialog.error(this, "Vui lòng chọn dòng cần thực hiện!");
+                return;
+            }
             delete(row);
         } catch (Exception e) {
-            MessageDialog.error(this, "Vui lòng chọn dòng cần thực hiện!");
+            MessageDialog.error(this, "Vui lòng xoá các mô tả và phiên bản trước khi xoá sản phẩm!");
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
 

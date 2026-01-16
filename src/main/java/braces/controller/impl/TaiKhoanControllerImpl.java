@@ -67,7 +67,6 @@ public class TaiKhoanControllerImpl implements TaiKhoanController {
         }
     }
 
-    @Override
     public List<TaiKhoan> getSearchTable(String text, String searchType) {
         text = text.toLowerCase();
         List<TaiKhoan> result = new ArrayList<>();

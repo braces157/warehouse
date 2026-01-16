@@ -60,37 +60,5 @@ public class DungLuongRAMControllerImpl implements DungLuongRAMController {
         }
     }
     
-    @Override
-    public List<DungLuongRAM> getSearchTable(String text, String searchType) {
-        text = text.toLowerCase();
-        List<DungLuongRAM> result = new ArrayList<>();
-        
-        switch (searchType) {
-            case "Tất cả" -> {
-                for (DungLuongRAM e : this.getAll()) {
-                    if ((e.getMaRam() != null && e.getMaRam().toString().toLowerCase().contains(text))
-                            || (e.getKichThuocRam() != null && e.getKichThuocRam().toString().toLowerCase().contains(text))) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã RAM" -> {
-                for (DungLuongRAM e : this.getAll()) {
-                    if (e.getMaRam() != null && e.getMaRam().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Kích thước RAM" -> {
-                for (DungLuongRAM e : this.getAll()) {
-                    if (e.getKichThuocRam() != null && e.getKichThuocRam().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            default ->
-                throw new AssertionError("Unknown search type: " + searchType);
-        }
-        return result;
-    }
+ 
 }

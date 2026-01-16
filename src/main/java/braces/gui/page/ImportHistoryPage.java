@@ -54,7 +54,7 @@ public class ImportHistoryPage extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) table.getModel();
         model.setRowCount(0);
         for (LichSuDTO ls : list) {
-            Object[] rowData = {ls.getTenSanPham(), ls.getMaPhienBan(), ls.getSoLuong(), Formatter.formatVND(ls.getGiaTien()), Formatter.formatVND(ls.getSoLuong() * ls.getGiaTien())};
+            Object[] rowData = {ls.getTenSanPham(), ls.getMaPhienBan(), ls.getSoLuong(), Formatter.formatVND(ls.getGiaTien()), Formatter.formatVND((long) ls.getSoLuong() * ls.getGiaTien())};
             model.addRow(rowData);
         }
     }

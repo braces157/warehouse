@@ -46,11 +46,13 @@ public class CreateProductDialog extends javax.swing.JDialog {
         initComponents();
         setKhuVucKho();
     }
-  public boolean validateForm() {
-      
+
+    public boolean validateForm() {
+
         if (Validation.isEmpty(txtTenSP.getText())) {
             MessageDialog.warring(this, "Tên sản phẩm không được để trống");
-            return false;}
+            return false;
+        }
         if (Validation.isEmpty(txtChipXuLy.getText())) {
             MessageDialog.warring(this, "Chip xử lý không được để trống");
             return false;
@@ -59,9 +61,13 @@ public class CreateProductDialog extends javax.swing.JDialog {
             MessageDialog.warring(this, "Xuất xứ không được để trống");
             return false;
         }
- 
+        if (cboKVC.getSelectedIndex() < 0) {
+            MessageDialog.warring(this, "Vui lòng chọn khu vực kho");
+        }
+
         return true;
     }
+
     public void setKhuVucKho() {
         listKVC = ct.getAll();
         String[] searchType = new String[listKVC.size()];
@@ -116,6 +122,7 @@ public class CreateProductDialog extends javax.swing.JDialog {
         btnAdd = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Thêm sản phẩm");
         setPreferredSize(new java.awt.Dimension(1000, 550));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
@@ -302,6 +309,9 @@ public class CreateProductDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHuyActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        if (!validateForm()) {
+            return;
+        }
         page.getCt().save(getForm());
         MessageDialog.info(this, "Thêm thành công");
         page.init();

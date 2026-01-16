@@ -16,6 +16,8 @@ import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import java.awt.Frame;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -290,11 +292,11 @@ public class Login extends javax.swing.JFrame {
 
         if (ctTK.findByUsername(username).isEmpty()) {
             MessageDialog.warring(this, "Tài khoản không tồn tại");
-           
+
         } else {
             try {
                 TaiKhoan user = ctTK.findByUsername(username).get();
-                
+
                 if (BCrypt.compare(password, user.getMatKhau()) == false) {
                     MessageDialog.warring(this, "Sai mật khẩu");
                 } else if (user.getTrangThai() == 0) {
@@ -313,7 +315,7 @@ public class Login extends javax.swing.JFrame {
             } catch (Exception ex) {
             }
         }
-    
+
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
@@ -365,6 +367,9 @@ public class Login extends javax.swing.JFrame {
     private void init() {
         setLocationRelativeTo(this);
         setResizable(false);
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/png/warehouse.png"));
+        this.setIconImage(icon);
+
         txtUsername.putClientProperty(FlatClientProperties.PLACEHOLDER_TEXT, "Username");
         txtPassword.putClientProperty(FlatClientProperties.PLACEHOLDER_TEXT, "Password");
         txtUsername.putClientProperty(FlatClientProperties.TEXT_FIELD_LEADING_ICON, new FlatSVGIcon("svg/username.svg"));

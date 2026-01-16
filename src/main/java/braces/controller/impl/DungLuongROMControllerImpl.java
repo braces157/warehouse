@@ -59,38 +59,5 @@ public class DungLuongROMControllerImpl implements DungLuongROMController {
             throw new RuntimeException("Failed to delete storage capacity", e);
         }
     }
-    
-    @Override
-    public List<DungLuongROM> getSearchTable(String text, String searchType) {
-        text = text.toLowerCase();
-        List<DungLuongROM> result = new ArrayList<>();
-        
-        switch (searchType) {
-            case "Tất cả" -> {
-                for (DungLuongROM e : this.getAll()) {
-                    if ((e.getMaRom() != null && e.getMaRom().toString().toLowerCase().contains(text))
-                            || (e.getKichThuocRom() != null && e.getKichThuocRom().toString().toLowerCase().contains(text))) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã ROM" -> {
-                for (DungLuongROM e : this.getAll()) {
-                    if (e.getMaRom() != null && e.getMaRom().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Kích thước ROM" -> {
-                for (DungLuongROM e : this.getAll()) {
-                    if (e.getKichThuocRom() != null && e.getKichThuocRom().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            default ->
-                throw new AssertionError("Unknown search type: " + searchType);
-        }
-        return result;
-    }
+
 }

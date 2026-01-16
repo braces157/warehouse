@@ -116,6 +116,7 @@ public class DetailImportBill extends javax.swing.JDialog {
         btnPrint = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Chi tiết phiếu nhập");
         setPreferredSize(new java.awt.Dimension(1250, 672));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));

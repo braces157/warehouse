@@ -22,7 +22,7 @@ public class Formatter {
 
     public static String formatVND(double number) {
         DecimalFormat formatter = new DecimalFormat("###,###,###");
-        return formatter.format(number) + "đ";
+        return formatter.format(number) + "VNĐ";
     }
 
     public static Date unFormatDate(Object date) {

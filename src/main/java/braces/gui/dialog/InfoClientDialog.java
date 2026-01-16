@@ -63,6 +63,7 @@ public class InfoClientDialog extends javax.swing.JDialog {
         btnHuy = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Thông tin khách hàng");
         setPreferredSize(new java.awt.Dimension(600, 400));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));

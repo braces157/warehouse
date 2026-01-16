@@ -76,6 +76,7 @@ public class InfoEmployeeDialog extends javax.swing.JDialog {
         btnHuy = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Thông tin nhân viên");
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
         jPanel15.setMinimumSize(new java.awt.Dimension(100, 60));

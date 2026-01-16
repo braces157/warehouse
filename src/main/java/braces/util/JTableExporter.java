@@ -33,11 +33,9 @@ public class JTableExporter {
                 if (!filePath.toLowerCase().endsWith(".xlsx")) {
                     filePath += ".xlsx";
                 }
-
                 TableModel model = table.getModel();
                 Workbook workbook = new XSSFWorkbook();
                 Sheet sheet = workbook.createSheet("Sheet1");
-
                 CellStyle cellStyle = createStyleForHeader(sheet);
                 Row headerRow = sheet.createRow(0);
                 for (int i = 0; i < model.getColumnCount(); i++) {
@@ -55,17 +53,12 @@ public class JTableExporter {
                         }
                     }
                 }
-
-                // Resize all columns to fit the content size
                 for (int i = 0; i < model.getColumnCount(); i++) {
                     sheet.autoSizeColumn(i);
                 }
-
-                // Write the output to a file
                 try (FileOutputStream fileOut = new FileOutputStream(filePath)) {
                     workbook.write(fileOut);
                 }
-
                 workbook.close();
                 openFile(filePath);
             } catch (IOException ex) {

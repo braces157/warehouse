@@ -9,6 +9,7 @@ import braces.dao.impl.ThuocTinhSanPhamDAOImpl;
 import braces.entity.ThuocTinhSanPham;
 import braces.util.JTableUtilities;
 import braces.util.MessageDialog;
+import braces.util.Validation;
 import java.util.List;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
@@ -33,6 +34,30 @@ public class PropertiesDialog extends javax.swing.JDialog {
         this.maSP = maSP;
         initComponents();
         init();
+    }
+
+    boolean validateForm() {
+
+        if (Validation.isEmpty(txtTen.getText())) {
+            MessageDialog.warring(this, "Tên không được để trống");
+            return false;
+        }
+
+        if (Validation.isEmpty(txtMoTa.getText())) {
+            MessageDialog.warring(this, "Mô tả không được để trống");
+            return false;
+        }
+
+        if (Validation.isEmpty(txtStt.getText())) {
+            MessageDialog.warring(this, "Thứ tự không được để trống");
+            return false;
+        }
+
+        if (Validation.isNumber(txtStt.getText())) {
+            MessageDialog.warring(this, "Thứ tự phải là số");
+        }
+
+        return true;
     }
 
     /**
@@ -66,6 +91,7 @@ public class PropertiesDialog extends javax.swing.JDialog {
         btnClear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Thuộc tính sản phẩm");
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
         jPanel15.setMinimumSize(new java.awt.Dimension(100, 60));
@@ -315,12 +341,14 @@ public class PropertiesDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_btnRemoveActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        if (!validateForm()) return;
         ct.save(getForm());
         MessageDialog.info(this, "Sửa thành công");
         init();
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+       if (!validateForm()) return;
         ct.save(getForm());
         MessageDialog.info(this, "Thêm thành công");
         init();

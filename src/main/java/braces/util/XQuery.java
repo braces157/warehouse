@@ -8,24 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * Lớp tiện ích hỗ trợ truy vấn và chuyển đổi sang đối tượng
- *
- * @author NghiemN
- * @version 1.0
- */
+
 public class XQuery {
 
-    /**
-     * Truy vấn 1 đối tượng
-     *
-     * @param <B> kiểu của đối tượng cần chuyển đổi
-     * @param beanClass lớp của đối tượng kết quả
-     * @param sql câu lệnh truy vấn
-     * @param values các giá trị cung cấp cho các tham số của SQL
-     * @return kết quả truy vấn
-     * @throws RuntimeException lỗi truy vấn
-     */
+
     public static <B> B getSingleBean(Class<B> beanClass, String sql, Object... values) {
         List<B> list = XQuery.getBeanList(beanClass, sql, values);
         if (!list.isEmpty()) {
@@ -34,16 +20,7 @@ public class XQuery {
         return null;
     }
 
-    /**
-     * Truy vấn nhiều đối tượng
-     *
-     * @param <B> kiểu của đối tượng cần chuyển đổi
-     * @param beanClass lớp của đối tượng kết quả
-     * @param sql câu lệnh truy vấn
-     * @param values các giá trị cung cấp cho các tham số của SQL
-     * @return kết quả truy vấn
-     * @throws RuntimeException lỗi truy vấn
-     */
+  
     public static <B> List<B> getBeanList(Class<B> beanClass, String sql, Object... values) {
         List<B> list = new ArrayList<>();
         try {
@@ -57,15 +34,7 @@ public class XQuery {
         return list;
     }
 
-    /**
-     * Tạo bean với dữ liệu đọc từ bản ghi hiện tại
-     *
-     * @param <B> kiểu của đối tượng cần chuyển đổi
-     * @param resultSet tập bản ghi cung cấp dữ liệu
-     * @param beanClass lớp của đối tượng kết quả
-     * @return kết quả truy vấn
-     * @throws RuntimeException lỗi truy vấn
-     */
+ 
     private static <B> B readBean(ResultSet resultSet, Class<B> beanClass) throws Exception {
         B bean = beanClass.getDeclaredConstructor().newInstance();
         Method[] methods = beanClass.getDeclaredMethods();

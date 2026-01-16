@@ -37,7 +37,8 @@ public class CreateWarehouseDialog extends javax.swing.JDialog {
         kvk.setTenKhuVuc(txtTen.getText());
         return kvk;
     }
-      public boolean validateForm() {
+
+    public boolean validateForm() {
         if (Validation.isEmpty(txtTen.getText())) {
             MessageDialog.warring(this, "Tên kho không được để trống");
             return false;
@@ -74,6 +75,7 @@ public class CreateWarehouseDialog extends javax.swing.JDialog {
         btnAdd = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Thêm kho hàng");
         setPreferredSize(new java.awt.Dimension(650, 300));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
@@ -175,6 +177,9 @@ public class CreateWarehouseDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHuyActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        if (!validateForm()) {
+            return;
+        }
         page.getCt().save(getForm());
         MessageDialog.info(this, "Thêm thành công");
         page.init();

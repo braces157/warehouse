@@ -7,6 +7,7 @@ package braces.gui.dialog;
 import braces.entity.KhuVucKho;
 import braces.gui.page.WarehousePage;
 import braces.util.MessageDialog;
+import braces.util.Validation;
 
 /**
  *
@@ -45,6 +46,18 @@ public class EditWarehouseDialog extends javax.swing.JDialog {
         kvk.setTenKhuVuc(txtTen.getText());
         return kvk;
     }
+   public boolean validateForm() {
+        if (Validation.isEmpty(txtTen.getText())) {
+            MessageDialog.warring(this, "Tên kho không được để trống");
+            return false;
+        }
+        if (Validation.isEmpty(txtDiaChi.getText())) {
+            MessageDialog.warring(this, "Địa chỉ không được để trống");
+            return false;
+        }
+
+        return true;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -69,6 +82,7 @@ public class EditWarehouseDialog extends javax.swing.JDialog {
         btnSua = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Sửa thông tin kho hàng");
         setPreferredSize(new java.awt.Dimension(650, 300));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
@@ -166,6 +180,7 @@ public class EditWarehouseDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHuyActionPerformed
 
     private void btnSuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuaActionPerformed
+       if (!validateForm()) return;
         page.getCt().save(getForm());
         MessageDialog.info(this, "Sửa thành công");
         page.init();

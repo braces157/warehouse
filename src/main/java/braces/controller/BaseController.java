@@ -7,14 +7,7 @@ package braces.controller;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Base controller interface providing common CRUD operations and search
- * functionality
- *
- * @param <T> Entity type
- * @param <ID> ID type
- * @author Braces
- */
+
 public interface BaseController<T, ID> {
 
     List<T> getAll();
@@ -25,5 +18,4 @@ public interface BaseController<T, ID> {
 
     void deleteById(ID id);
 
-    List<T> getSearchTable(String text, String searchType);
 }

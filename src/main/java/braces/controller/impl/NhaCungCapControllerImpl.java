@@ -12,10 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- *
- * @author Braces
- */
 public class NhaCungCapControllerImpl implements NhaCungCapController {
     
     private final NhaCungCapDAO nhaCungCapDAO;
@@ -60,7 +56,6 @@ public class NhaCungCapControllerImpl implements NhaCungCapController {
         }
     }
     
-    @Override
     public List<NhaCungCap> getSearchTable(String text, String searchType) {
         text = text.toLowerCase();
         List<NhaCungCap> result = new ArrayList<>();

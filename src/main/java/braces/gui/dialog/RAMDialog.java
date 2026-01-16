@@ -143,6 +143,11 @@ public class RAMDialog extends javax.swing.JDialog {
         txtDungLuong.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtDungLuong.setToolTipText("");
         txtDungLuong.setPreferredSize(new java.awt.Dimension(330, 40));
+        txtDungLuong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDungLuongActionPerformed(evt);
+            }
+        });
         jPanel18.add(txtDungLuong);
 
         jPanel1.add(jPanel18);
@@ -305,6 +310,10 @@ public class RAMDialog extends javax.swing.JDialog {
         // TODO add your handling code here:
         clear();
     }//GEN-LAST:event_btnClearActionPerformed
+
+    private void txtDungLuongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDungLuongActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDungLuongActionPerformed
 
     /**
      * @param args the command line arguments

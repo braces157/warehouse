@@ -9,10 +9,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-/**
- *
- * @author Braces
- */
+
 public class PhieuNhapControllerImpl implements PhieuNhapController {
 
     private final PhieuNhapDAO phieuNhapDAO;
@@ -82,11 +79,5 @@ public class PhieuNhapControllerImpl implements PhieuNhapController {
             }
         }
         return result;
-    }
-
-    @Override
-    public List<PhieuNhap> getSearchTable(String text, String searchType) {
-        
-        return null;
     }
 }

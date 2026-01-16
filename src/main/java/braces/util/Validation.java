@@ -2,10 +2,7 @@ package braces.util;
 
 import java.util.regex.Pattern;
 
-/**
- *
- * @author atuandev
- */
+
 public class Validation {
 
     public static Boolean isEmpty(String input) {

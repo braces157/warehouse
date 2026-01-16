@@ -13,10 +13,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-/**
- *
- * @author Braces
- */
+
 public class PhieuXuatControllerImpl implements PhieuXuatController {
 
     private final PhieuXuatDAO phieuXuatDAO;
@@ -77,10 +74,7 @@ public class PhieuXuatControllerImpl implements PhieuXuatController {
         }
     }
 
-    @Override
-    public List<PhieuXuat> getSearchTable(String text, String searchType) {
-     return null;
-    }
+
 
     @Override
     public List<PhieuXuat> getFilterTable(Integer trangThai, long fromPrice, long toPrice) {

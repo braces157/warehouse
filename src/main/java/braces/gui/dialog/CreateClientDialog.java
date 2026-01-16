@@ -9,7 +9,6 @@ import braces.gui.page.ClientPage;
 import braces.gui.page.CreateExportBillPage;
 import braces.util.MessageDialog;
 import braces.util.Validation;
-import javax.swing.JTable;
 import lombok.Setter;
 
 @Setter
@@ -103,6 +102,7 @@ public class CreateClientDialog extends javax.swing.JDialog {
         btnAdd = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Thêm khách hàng");
         setPreferredSize(new java.awt.Dimension(600, 400));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
@@ -119,6 +119,7 @@ public class CreateClientDialog extends javax.swing.JDialog {
         getContentPane().add(jPanel15, java.awt.BorderLayout.NORTH);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setToolTipText("");
         jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 16));
 
         jPanel18.setBackground(new java.awt.Color(255, 255, 255));

@@ -63,10 +63,8 @@ public class ImportPage extends javax.swing.JPanel {
         table.setAutoCreateRowSorter(true);
         TableRowSorter<DefaultTableModel> sorter = new TableRowSorter<>(model);
         sorter.setComparator(4, Comparator.comparingDouble(Formatter::unformatVND));
-
         sorter.setComparator(1, Comparator.comparing(Formatter::unFormatDate));
         table.setRowSorter(sorter);
-
     }
 
     public void loadTable() {

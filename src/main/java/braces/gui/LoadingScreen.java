@@ -8,6 +8,8 @@ import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Image;
+import java.awt.Toolkit;
 
 /**
  *
@@ -20,7 +22,9 @@ public class LoadingScreen extends javax.swing.JDialog {
      */
     public LoadingScreen(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
-                setUndecorated(true);
+        setUndecorated(true);
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/png/warehouse.png"));
+        this.setIconImage(icon);
 
         initComponents();
         jProgressBar1.setForeground(Color.BLACK);
@@ -32,9 +36,15 @@ public class LoadingScreen extends javax.swing.JDialog {
         Thread thread = new Thread(() -> {
             try {
                 for (int i = 0; i <= 100; i++) {
-                    if (i == 20) lblText.setText("Đang tải SQL...");
-                    if (i == 40) lblText.setText("Đang tải giao diện...");
-                    if (i == 60) lblText.setText("Chương trình đang bắt đầu ...");
+                    if (i == 20) {
+                        lblText.setText("Đang tải SQL...");
+                    }
+                    if (i == 40) {
+                        lblText.setText("Đang tải giao diện...");
+                    }
+                    if (i == 60) {
+                        lblText.setText("Chương trình đang bắt đầu ...");
+                    }
                     jProgressBar1.setValue(i);
                     Thread.sleep(20);
                 }
@@ -143,7 +153,7 @@ public class LoadingScreen extends javax.swing.JDialog {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-         FlatLaf.registerCustomDefaultsSource("style");
+        FlatLaf.registerCustomDefaultsSource("style");
 
         FlatLightLaf.setup();
         //</editor-fold>

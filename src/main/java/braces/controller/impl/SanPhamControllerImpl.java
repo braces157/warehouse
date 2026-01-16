@@ -63,7 +63,6 @@ public class SanPhamControllerImpl implements SanPhamController {
         }
     }
 
-    @Override
     public List<SanPham> getSearchTable(String text, String searchType) {
         text = text.toLowerCase();
         List<SanPham> result = new ArrayList<>();

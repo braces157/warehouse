@@ -61,7 +61,6 @@ public class KhachHangControllerImpl implements KhachHangController {
     }
     
     
-    @Override
     public List<KhachHang> getSearchTable(String text, String searchType) {
         text = text.toLowerCase();
         List<KhachHang> result = new ArrayList<>();

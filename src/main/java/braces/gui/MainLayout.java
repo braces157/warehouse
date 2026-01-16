@@ -79,8 +79,10 @@ public class MainLayout extends javax.swing.JFrame {
             btnProduct.setEnabled(false);
             btnStats.setEnabled(false);
             btnProperties.setEnabled( false);
-            btnHistory.setEnabled(false);
             btnEmployee.setEnabled(false);
+            btnSupplier.setEnabled(false);
+            btnClient.setEnabled(false);
+            btnWarehouse.setEnabled(false);
         }
     }
 

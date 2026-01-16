@@ -11,6 +11,7 @@ import braces.entity.KhachHang;
 import braces.entity.MauSac;
 import braces.util.JTableUtilities;
 import braces.util.MessageDialog;
+import braces.util.Validation;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import java.util.List;
 import javax.swing.DefaultComboBoxModel;
@@ -33,6 +34,14 @@ public class ColorDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         init();
+    }
+
+    public boolean validateForm() {
+        if (Validation.isEmpty(txtTenMau.getText())) {
+            MessageDialog.warring(this, "Tên màu không được để trống");
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -94,6 +103,11 @@ public class ColorDialog extends javax.swing.JDialog {
         txtTenMau.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtTenMau.setToolTipText("");
         txtTenMau.setPreferredSize(new java.awt.Dimension(330, 40));
+        txtTenMau.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTenMauActionPerformed(evt);
+            }
+        });
         jPanel18.add(txtTenMau);
 
         jPanel1.add(jPanel18);
@@ -272,12 +286,18 @@ public class ColorDialog extends javax.swing.JDialog {
 
     }
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        if (!validateForm()) {
+            return;
+        }
         ct.save(getForm());
         MessageDialog.info(this, "Sửa thành công");
         init();
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        if (!validateForm()) {
+            return;
+        }
         ct.save(getForm());
         MessageDialog.info(this, "Thêm thành công");
         init();
@@ -287,6 +307,10 @@ public class ColorDialog extends javax.swing.JDialog {
         // TODO add your handling code here:
         clear();
     }//GEN-LAST:event_btnClearActionPerformed
+
+    private void txtTenMauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTenMauActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTenMauActionPerformed
 
     /**
      * @param args the command line arguments

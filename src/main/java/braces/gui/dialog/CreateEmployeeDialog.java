@@ -10,6 +10,8 @@ import braces.gui.page.EmployeePage;
 import braces.util.BCrypt;
 import braces.util.MessageDialog;
 import braces.util.Validation;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -70,7 +72,7 @@ public class CreateEmployeeDialog extends javax.swing.JDialog {
         return true;
     }
 
-    public TaiKhoan getForm() {
+    public TaiKhoan getForm() throws Exception {
 
         TaiKhoan tk = new TaiKhoan();
         tk.setEmail(txtEmail.getText());
@@ -122,6 +124,7 @@ public class CreateEmployeeDialog extends javax.swing.JDialog {
         btnAdd = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Thêm nhân viên");
         setPreferredSize(new java.awt.Dimension(600, 700));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
@@ -310,7 +313,11 @@ public class CreateEmployeeDialog extends javax.swing.JDialog {
         if (!validateForm()) {
             return;
         }
-        page.getCt().save(getForm());
+        try {
+            page.getCt().save(getForm());
+        } catch (Exception ex) {
+            Logger.getLogger(CreateEmployeeDialog.class.getName()).log(Level.SEVERE, null, ex);
+        }
         MessageDialog.info(this, "Thêm thành công");
         page.init();
         this.dispose();

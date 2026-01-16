@@ -74,53 +74,5 @@ public class CTPhieuNhapControllerImpl implements CTPhieuNhapController {
         }
     }
 
-    @Override
-    public List<CTPhieuNhap> getSearchTable(String text, String searchType) {
-        text = text.toLowerCase();
-        List<CTPhieuNhap> result = new ArrayList<>();
-
-        switch (searchType) {
-            case "Tất cả" -> {
-                for (CTPhieuNhap e : this.getAll()) {
-                    if ((e.getMaPhieuNhap() != null && e.getMaPhieuNhap().toString().toLowerCase().contains(text))
-                            || (e.getMaPhienBan() != null && e.getMaPhienBan().toLowerCase().contains(text))
-                            || (e.getSoLuong() != null && e.getSoLuong().toString().toLowerCase().contains(text))
-                            || (e.getDonGia() != null && e.getDonGia().toString().toLowerCase().contains(text))) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã phiếu nhập" -> {
-                for (CTPhieuNhap e : this.getAll()) {
-                    if (e.getMaPhieuNhap() != null && e.getMaPhieuNhap().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Mã phiên bản" -> {
-                for (CTPhieuNhap e : this.getAll()) {
-                    if (e.getMaPhienBan() != null && e.getMaPhienBan().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Số lượng" -> {
-                for (CTPhieuNhap e : this.getAll()) {
-                    if (e.getSoLuong() != null && e.getSoLuong().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            case "Đơn giá" -> {
-                for (CTPhieuNhap e : this.getAll()) {
-                    if (e.getDonGia() != null && e.getDonGia().toString().toLowerCase().contains(text)) {
-                        result.add(e);
-                    }
-                }
-            }
-            default ->
-                throw new AssertionError("Unknown search type: " + searchType);
-        }
-        return result;
-    }
+    
 }

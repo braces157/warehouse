@@ -21,6 +21,7 @@ import braces.util.JTableUtilities;
 import braces.util.MessageDialog;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import java.awt.Dialog;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import javax.swing.DefaultComboBoxModel;
@@ -29,6 +30,7 @@ import javax.swing.JPopupMenu;
 import javax.swing.JSeparator;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 import lombok.Getter;
 
 /**
@@ -61,7 +63,13 @@ public class ExportPage extends javax.swing.JPanel {
         list = ct.getAll();
         loadTable();
         JTableUtilities.setCellsAlignment(table, SwingConstants.CENTER);
-    }
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
+        table.setAutoCreateRowSorter(true);
+        TableRowSorter<DefaultTableModel> sorter = new TableRowSorter<>(model);
+        sorter.setComparator(4, Comparator.comparingDouble(Formatter::unformatVND));
+        sorter.setComparator(1, Comparator.comparing(Formatter::unFormatDate));
+        table.setRowSorter(sorter);
+    }   
 
     public void loadTable() {
         DefaultTableModel model = (DefaultTableModel) table.getModel();

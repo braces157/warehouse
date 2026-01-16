@@ -20,6 +20,7 @@ import braces.entity.ThuocTinhSanPham;
 import braces.util.Formatter;
 import braces.util.JTableUtilities;
 import braces.util.MessageDialog;
+import braces.util.Validation;
 import com.sun.jdi.connect.Connector;
 import java.util.List;
 import javax.swing.DefaultComboBoxModel;
@@ -102,6 +103,7 @@ public class ModelDialog extends javax.swing.JDialog {
         btnClear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Phiên bản sản phẩm");
         setMaximumSize(new java.awt.Dimension(1250, 700));
         setMinimumSize(new java.awt.Dimension(1250, 700));
         setPreferredSize(new java.awt.Dimension(1250, 700));
@@ -156,6 +158,11 @@ public class ModelDialog extends javax.swing.JDialog {
         jPanel4.add(jLabel7);
 
         txtMa.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtMa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMaActionPerformed(evt);
+            }
+        });
         jPanel4.add(txtMa);
 
         txtSoLuong.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -373,7 +380,50 @@ public class ModelDialog extends javax.swing.JDialog {
         DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(searchType);
         cboRAM.setModel(model);
     }
-
+    boolean validateForm() {
+         if (Validation.isEmpty(txtMa.getText())) {
+             MessageDialog.warring(this, "Mã không được để trống");
+             return false;
+         }
+         
+         if (Validation.isEmpty(txtSoLuong.getText())) {
+             MessageDialog.warring(this, "Số lượng không được để trống");
+             return false;
+         }
+         
+         if (Validation.isEmpty(txtGiaNhap.getText())) {
+             MessageDialog.warring(this, "Giá nhập không được để trống");
+             return false;
+         }
+         
+         if (Validation.isEmpty(txtGiaXuat.getText())) {
+             MessageDialog.warring(this, "Giá xuất không được để trống");
+             return false;
+         }
+         if (Validation.isNumber(txtSoLuong.getText())) {
+             MessageDialog.warring(this, "Số lượng phải là số");
+         }
+         
+         if (Validation.isNumber(txtGiaNhap.getText())) {
+             MessageDialog.warring(this, "Giá nhập phải là số");
+         }
+         
+         if (Validation.isNumber(txtGiaXuat.getText())) {
+             MessageDialog.warring(this, "Giá xuất phải là số");
+         }
+         if (cboColor.getSelectedIndex() < 0) {
+             MessageDialog.warring(this, "Vui lòng chọn màu sắc");
+         }
+         
+         if (cboRAM.getSelectedIndex() < 0) {
+             MessageDialog.warring(this, "Vui lòng chọn dung lượng RAM");
+         }
+         
+         if (cboROM.getSelectedIndex() < 0) {
+             MessageDialog.warring(this, "Vui lòng chọn dung lượng ROM");
+         }
+         return true;
+    }
     void loadROM() {
 
         listROM = ctROM.getAll();
@@ -405,12 +455,14 @@ public class ModelDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_btnRemoveActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        if (!validateForm()) return;
         ct.save(getForm());
         MessageDialog.info(this, "Sửa thành công");
         init();
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        if (!validateForm()) return;
         ct.save(getForm());
         MessageDialog.info(this, "Thêm thành công");
         init();
@@ -435,6 +487,10 @@ public class ModelDialog extends javax.swing.JDialog {
         int row = table.getSelectedRow();
         setForm(list.get(row));
     }//GEN-LAST:event_tableMouseClicked
+
+    private void txtMaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMaActionPerformed
 
     /**
      * @param args the command line arguments

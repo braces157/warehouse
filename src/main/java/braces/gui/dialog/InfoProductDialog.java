@@ -99,6 +99,7 @@ public class InfoProductDialog extends javax.swing.JDialog {
         btnHuy = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Thông tin sản phẩm");
         setPreferredSize(new java.awt.Dimension(1000, 550));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));

@@ -65,6 +65,9 @@ public class MauSacDAOImpl implements MauSacDAO {
 
     @Override
     public Optional<MauSac> findByTenMau(String tenMau) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        String sql = "SELECT * FROM MAUSAC WHERE tenmau = ?";
+        MauSac mauSac = XQuery.getSingleBean(MauSac.class, sql, tenMau);
+        return Optional.ofNullable(mauSac);
+
     }
 }

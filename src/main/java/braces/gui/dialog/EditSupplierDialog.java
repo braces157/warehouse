@@ -7,6 +7,7 @@ package braces.gui.dialog;
 import braces.entity.NhaCungCap;
 import braces.gui.page.SupplierPage;
 import braces.util.MessageDialog;
+import braces.util.Validation;
 
 /**
  *
@@ -37,6 +38,34 @@ public class EditSupplierDialog extends javax.swing.JDialog {
         txtEmail.setText(ncc.getEmail());
         txtSdt.setText(ncc.getSoDienThoai());
         txtTen.setText(ncc.getTenNhaCungCap());
+    }
+    public boolean validateForm() {
+        if (Validation.isEmail(txtTen.getText())) {
+            MessageDialog.warring(this, "Tên nhà cung cấp không được để trống");
+            return false;
+        }
+        if (Validation.isEmpty(txtSdt.getText())) {
+            MessageDialog.warring(this, "Số điện thoại không được để trống");
+            return false;
+        }
+        if (Validation.isEmpty(txtEmail.getText())) {
+            MessageDialog.warring(this, "Email không được để trống");
+            return false;
+        }
+        if (Validation.isEmail(txtDiaChi.getText())) {
+            MessageDialog.warring(this, "Địa chỉ không được để trống");
+            return false;
+        }
+        if (!Validation.isPhoneNumber(txtSdt.getText())) {
+            MessageDialog.warring(this, "Số điện thoại không hợp lệ");
+            return false;
+        }
+
+        if (!Validation.isEmail(txtEmail.getText())) {
+            MessageDialog.warring(this, "Email không hợp lệ");
+            return false;
+        }
+        return true;
     }
     public NhaCungCap getForm() {
         NhaCungCap nhaCungCap = new NhaCungCap();
@@ -77,6 +106,7 @@ public class EditSupplierDialog extends javax.swing.JDialog {
         btnSua = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Sửa thông tin nhà cung cấp");
         setPreferredSize(new java.awt.Dimension(650, 500));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -207,6 +237,7 @@ public class EditSupplierDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHuyActionPerformed
 
     private void btnSuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuaActionPerformed
+        if (!validateForm()) return;
         page.getCt().save(getForm());
         MessageDialog.info(this, "Sửa thành công");
         page.init();

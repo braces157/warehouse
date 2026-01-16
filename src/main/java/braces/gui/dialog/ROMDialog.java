@@ -108,7 +108,7 @@ public class ROMDialog extends javax.swing.JDialog {
         btnClear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("RAM");
+        setTitle("ROM");
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
         jPanel15.setMinimumSize(new java.awt.Dimension(100, 60));

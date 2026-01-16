@@ -14,6 +14,7 @@ import braces.entity.SanPham;
 import braces.gui.chart.ModelChart;
 import braces.util.Formatter;
 import braces.util.JTableUtilities;
+import braces.util.XAuth;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 
 import java.awt.Color;
@@ -93,8 +94,8 @@ public class HomePage extends javax.swing.JPanel {
         JTableUtilities.setCellsAlignment(table, SwingConstants.CENTER);
         DefaultTableModel model = (DefaultTableModel) table.getModel();
         model.setRowCount(0);
-        List<PhieuNhap> listPN = ctPN.getByNhanVienLast7Days(1);
-        List<PhieuXuat> listPX = ctPX.getByNhanVienLast7Days(1);
+        List<PhieuNhap> listPN = ctPN.getByNhanVienLast7Days(XAuth.taikhoan.getManv());
+        List<PhieuXuat> listPX = ctPX.getByNhanVienLast7Days(XAuth.taikhoan.getManv());
         for (PhieuNhap pn : listPN) {
             LichSu ls = new LichSu();
             ls.setGiaTien(pn.getTongTien());

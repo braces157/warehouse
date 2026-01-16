@@ -9,25 +9,19 @@ import braces.controller.impl.PhieuNhapControllerImpl;
 import braces.controller.impl.PhieuXuatControllerImpl;
 import braces.controller.impl.SanPhamControllerImpl;
 import braces.controller.impl.ThuocTinhSanPhamControllerImpl;
-import braces.dao.CTPhieuNhapDAO;
-import braces.dao.impl.CTPhieuNhapDAOImpl;
 import braces.dao.impl.CTPhieuXuatDAOImpl;
 import braces.dao.impl.KhachHangDAOImpl;
 import braces.dao.impl.PhienBanDAOImpl;
-import braces.dao.impl.PhieuNhapDAOImpl;
 import braces.dao.impl.PhieuXuatDAOImpl;
 import braces.dao.impl.SanPhamDAOImpl;
 import braces.dao.impl.ThuocTinhSanPhamDAOImpl;
-import braces.entity.CTPhieuNhap;
 import braces.entity.CTPhieuXuat;
 import braces.entity.KhachHang;
 import braces.entity.PhienBan;
-import braces.entity.PhieuNhap;
 import braces.entity.PhieuXuat;
 import braces.entity.SanPham;
 import braces.entity.ThuocTinhSanPham;
 import braces.gui.dialog.CreateClientDialog;
-import braces.gui.dialog.CreateProductDialog;
 import braces.util.Formatter;
 import braces.util.JTableUtilities;
 import braces.util.MessageDialog;
@@ -47,6 +41,7 @@ import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 import lombok.Getter;
 import lombok.Setter;
+import org.apache.poi.ss.formula.ptg.TblPtg;
 
 @Getter
 @Setter
@@ -91,6 +86,9 @@ public class CreateExportBillPage extends javax.swing.JPanel {
         listTT = ctTT.getBySanPham(id);
         listTT.sort(Comparator.comparingInt(ThuocTinhSanPham::getThuTu));
         StringBuilder sb = new StringBuilder();
+
+        int soluong = listPB.get(cboPhienBan.getSelectedIndex()).getSoLuongTon();
+        sb.append("Số lượng: ").append(soluong).append("\n");
         for (ThuocTinhSanPham t : listTT) {
             sb.append(t.getTen())
                     .append(": ")
@@ -820,11 +818,19 @@ public class CreateExportBillPage extends javax.swing.JPanel {
         }
         if (check != -1) {
             CTPhieuXuat ctpx = listCT.get(check);
+            if (ctpx.getSoLuong() + Integer.valueOf(txtSoLuong.getText()) > pb.getSoLuongTon()) {
+                MessageDialog.warring(this, "Không đủ số lượng");
+                return;
+            }
             ctpx.setSoLuong(ctpx.getSoLuong() + Integer.valueOf(txtSoLuong.getText()));
             listCT.set(check, ctpx);
             tableCart.setValueAt(ctpx.getSoLuong(), check, 2);
             setTongTien();
         } else {
+            if (Integer.valueOf(txtSoLuong.getText()) > pb.getSoLuongTon()) {
+                MessageDialog.warring(this, "Không đủ số lượng");
+                return;
+            }
             CTPhieuXuat ctpx = new CTPhieuXuat();
             ctpx.setDonGia(pb.getGiaBan());
             ctpx.setMaPhienBan(pb.getMaPhienBanSP());
@@ -887,7 +893,7 @@ public class CreateExportBillPage extends javax.swing.JPanel {
             ctPX.save(phieuXuat);
             for (CTPhieuXuat ct : listCT) {
                 PhienBan pb = ctPB.getById(ct.getMaPhienBan()).get();
-                pb.setSoLuongTon(pb.getSoLuongTon()-ct.getSoLuong());
+                pb.setSoLuongTon(pb.getSoLuongTon() - ct.getSoLuong());
                 ctPB.save(pb);
                 ctCT.save(ct);
             }
@@ -933,8 +939,10 @@ public class CreateExportBillPage extends javax.swing.JPanel {
     }//GEN-LAST:event_tableMouseClicked
 
     private void cboPhienBanItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboPhienBanItemStateChanged
-        // TODO add your handling code here:
-        txtDonGia.setText(String.valueOf(listPB.get(cboPhienBan.getSelectedIndex()).getGiaBan()));
+        int row = table.getSelectedRow();
+        SanPham sp = listSP.get(row);
+        setThuocTinh(sp.getMaSP());
+        txtDonGia.setText(Formatter.formatVND(listPB.get(cboPhienBan.getSelectedIndex()).getGiaBan()));
     }//GEN-LAST:event_cboPhienBanItemStateChanged
 
     private void txtTenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTenActionPerformed

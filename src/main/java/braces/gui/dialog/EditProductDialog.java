@@ -10,6 +10,7 @@ import braces.entity.KhuVucKho;
 import braces.entity.SanPham;
 import braces.gui.page.ProductPage;
 import braces.util.MessageDialog;
+import braces.util.Validation;
 import braces.util.XIcon;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import java.io.File;
@@ -49,6 +50,27 @@ public class EditProductDialog extends javax.swing.JDialog {
     void init() {
         setForm();
         setKhuVucKho();
+    }
+
+    public boolean validateForm() {
+
+        if (Validation.isEmpty(txtTenSP.getText())) {
+            MessageDialog.warring(this, "Tên sản phẩm không được để trống");
+            return false;
+        }
+        if (Validation.isEmpty(txtChipXuLy.getText())) {
+            MessageDialog.warring(this, "Chip xử lý không được để trống");
+            return false;
+        }
+        if (Validation.isEmpty(txtXuatXu.getText())) {
+            MessageDialog.warring(this, "Xuất xứ không được để trống");
+            return false;
+        }
+        if (cboKVK.getSelectedIndex() < 0) {
+            MessageDialog.warring(this, "Vui lòng chọn khu vực kho");
+        }
+
+        return true;
     }
 
     public void setKhuVucKho() {
@@ -119,6 +141,7 @@ public class EditProductDialog extends javax.swing.JDialog {
         btnEdit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Sửa thông tin sản phẩm");
         setPreferredSize(new java.awt.Dimension(1000, 550));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
@@ -306,6 +329,9 @@ public class EditProductDialog extends javax.swing.JDialog {
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
         // TODO add your handling code here:
+        if (!validateForm()) {
+            return;
+        }
         page.getCt().save(getForm());
         MessageDialog.info(this, "Sửa thành công");
         page.init();

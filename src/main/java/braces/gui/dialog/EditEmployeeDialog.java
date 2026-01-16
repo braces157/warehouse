@@ -8,6 +8,7 @@ import braces.entity.TaiKhoan;
 import braces.gui.page.EmployeePage;
 import braces.util.BCrypt;
 import braces.util.MessageDialog;
+import braces.util.Validation;
 import lombok.Getter;
 import lombok.Setter;
 import java.awt.Dialog;
@@ -47,6 +48,43 @@ public class EditEmployeeDialog extends javax.swing.JDialog {
         txtEmail.setText(taiKhoan.getEmail());
         txtSdt.setText(taiKhoan.getSoDienThoai());
         matKhau = taiKhoan.getMatKhau();
+    }
+
+    public boolean validateForm() {
+        if (Validation.isEmpty(txtHoTen.getText())) {
+            MessageDialog.warring(this, "Tên không được để trống");
+            return false;
+        }
+        if (Validation.isEmpty(txtUsername.getText())) {
+            MessageDialog.warring(this, "Tên không được để trống");
+            return false;
+        }
+        if (Validation.isEmpty(txtSdt.getText())) {
+            MessageDialog.warring(this, "Số điện thoại không được để trống");
+            return false;
+        }
+        if (Validation.isEmpty(txtEmail.getText())) {
+            MessageDialog.warring(this, "Email không được để trống");
+            return false;
+        }
+        if (!Validation.isPhoneNumber(txtSdt.getText())) {
+            MessageDialog.warring(this, "Số điện thoại không hợp lệ");
+            return false;
+        }
+
+        if (page.getCt().findByUsername(txtUsername.getText()).isPresent()) {
+            System.out.println(taiKhoan.getUsername());
+            if (txtUsername.getText().equals(this.taiKhoan.getUsername())) {
+                return true;
+            }
+            MessageDialog.warring(this, "Người dùng đã tồn tại");
+            return false;
+        }
+        if (!Validation.isEmail(txtEmail.getText())) {
+            MessageDialog.warring(this, "Email không hợp lệ");
+            return false;
+        }
+        return true;
     }
 
     TaiKhoan getForm() {
@@ -106,6 +144,7 @@ public class EditEmployeeDialog extends javax.swing.JDialog {
         btnEdit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Sửa thông tin nhân viên");
         setPreferredSize(new java.awt.Dimension(600, 700));
 
         jPanel15.setBackground(new java.awt.Color(0, 153, 153));
@@ -299,6 +338,9 @@ public class EditEmployeeDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_btnHuyActionPerformed
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
+        if (!validateForm()) {
+            return;
+        }
         saveAccount();
         this.dispose();
     }//GEN-LAST:event_btnEditActionPerformed
