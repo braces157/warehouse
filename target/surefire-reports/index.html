@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Project_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Project Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Project_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\PC\Downloads\Project\Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Project_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Project_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Project_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Project_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Project_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Project_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">32 methods, 4 failed,  9 skipped,  19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Project_Test_Suite" class="hide-methods failed suite-Project_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Project_Test_Suite -->
+                      <a href="#" panel-name="suite-Project_Test_Suite" class="show-methods failed suite-Project_Test_Suite"> (show)</a> <!-- show-methods failed suite-Project_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Project_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.dao.SanPhamDAOTest" class="method navigator-link" hash-for-method="testDeleteById">testDeleteById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.dao.SanPhamDAOTest" class="method navigator-link" hash-for-method="testFindAll_Retrieve">testFindAll_Retrieve</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.dao.SanPhamDAOTest" class="method navigator-link" hash-for-method="testFindByKhuVuc_Filter">testFindByKhuVuc_Filter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.dao.SanPhamDAOTest" class="method navigator-link" hash-for-method="testSave_NewProduct">testSave_NewProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Project_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Project_Test_Suite" class="hide-methods skipped suite-Project_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Project_Test_Suite -->
+                      <a href="#" panel-name="suite-Project_Test_Suite" class="show-methods skipped suite-Project_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Project_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Project_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testGetRoleText_Admin">testGetRoleText_Admin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testGetRoleText_NhanVien">testGetRoleText_NhanVien</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testGetRole_Default">testGetRole_Default</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testGetSearchTable_SearchName">testGetSearchTable_SearchName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testGetSearchTable_SearchRole">testGetSearchTable_SearchRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testGetTrangThaiText_HoatDong">testGetTrangThaiText_HoatDong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testGetTrangThaiText_KhongHoatDong">testGetTrangThaiText_KhongHoatDong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testGetTrangThai_HoatDong">testGetTrangThai_HoatDong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.controller.TaiKhoanControllerTest" class="method navigator-link" hash-for-method="testSave_Account">testSave_Account</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Project_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Project_Test_Suite" class="hide-methods passed suite-Project_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Project_Test_Suite -->
+                      <a href="#" panel-name="suite-Project_Test_Suite" class="show-methods passed suite-Project_Test_Suite"> (show)</a> <!-- show-methods passed suite-Project_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Project_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.BCryptTest" class="method navigator-link" hash-for-method="testCompare_Failure">testCompare_Failure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.BCryptTest" class="method navigator-link" hash-for-method="testCompare_Success">testCompare_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.FormatterTest" class="method navigator-link" hash-for-method="testFormatNumber_LargeNumber">testFormatNumber_LargeNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.FormatterTest" class="method navigator-link" hash-for-method="testFormatVND_Standard">testFormatVND_Standard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsEmail_Invalid">testIsEmail_Invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsEmail_Valid">testIsEmail_Valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsEmpty_Null">testIsEmpty_Null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsEmpty_NullInput">testIsEmpty_NullInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsEmpty_Valid">testIsEmpty_Valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsEmpty_Whitespace">testIsEmpty_Whitespace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsNumber_InvalidString">testIsNumber_InvalidString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsNumber_Negative">testIsNumber_Negative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsNumber_Valid">testIsNumber_Valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsPassword_NoDigit">testIsPassword_NoDigit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsPassword_TooShort">testIsPassword_TooShort</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsPassword_Valid">testIsPassword_Valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsPhoneNumber_InvalidLength">testIsPhoneNumber_InvalidLength</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.ValidationTest" class="method navigator-link" hash-for-method="testIsPhoneNumber_Valid10Digits">testIsPhoneNumber_Valid10Digits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Project_Test_Suite" title="braces.util.FormatterTest" class="method navigator-link" hash-for-method="testUnformatVND_Standard">testUnformatVND_Standard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Project_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Project_Test_Suite" class="panel Project_Test_Suite">
+          <div class="suite-Project_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">braces.dao.SanPhamDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteById">
+                  </a> <!-- testDeleteById -->
+                  <span class="method-name">testDeleteById</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: Could not modify all classes [class braces.util.XJdbc]
+	at braces.dao.SanPhamDAOTest.testDeleteById(SanPhamDAOTest.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClassStatic(InlineBytecodeGenerator.java:226)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClassStatic(TypeCachingBytecodeGenerator.java:108)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createStaticMock(InlineDelegateByteBuddyMockMaker.java:566)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createStaticMock(InlineByteBuddyMockMaker.java:83)
+	at org.mockito.internal.util.MockUtil.createStaticMock(MockUtil.java:202)
+	at org.mockito.internal.MockitoCore.mockStatic(MockitoCore.java:134)
+	at org.mockito.Mockito.mockStatic(Mockito.java:2325)
+	at org.mockito.Mockito.mockStatic(Mockito.java:2262)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 39 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindAll_Retrieve">
+                  </a> <!-- testFindAll_Retrieve -->
+                  <span class="method-name">testFindAll_Retrieve</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: Could not modify all classes [class braces.util.XQuery]
+	at braces.dao.SanPhamDAOTest.testFindAll_Retrieve(SanPhamDAOTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClassStatic(InlineBytecodeGenerator.java:226)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClassStatic(TypeCachingBytecodeGenerator.java:108)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createStaticMock(InlineDelegateByteBuddyMockMaker.java:566)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createStaticMock(InlineByteBuddyMockMaker.java:83)
+	at org.mockito.internal.util.MockUtil.createStaticMock(MockUtil.java:202)
+	at org.mockito.internal.MockitoCore.mockStatic(MockitoCore.java:134)
+	at org.mockito.Mockito.mockStatic(Mockito.java:2325)
+	at org.mockito.Mockito.mockStatic(Mockito.java:2262)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 39 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindByKhuVuc_Filter">
+                  </a> <!-- testFindByKhuVuc_Filter -->
+                  <span class="method-name">testFindByKhuVuc_Filter</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: Could not modify all classes [class braces.util.XQuery]
+	at braces.dao.SanPhamDAOTest.testFindByKhuVuc_Filter(SanPhamDAOTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClassStatic(InlineBytecodeGenerator.java:226)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClassStatic(TypeCachingBytecodeGenerator.java:108)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createStaticMock(InlineDelegateByteBuddyMockMaker.java:566)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createStaticMock(InlineByteBuddyMockMaker.java:83)
+	at org.mockito.internal.util.MockUtil.createStaticMock(MockUtil.java:202)
+	at org.mockito.internal.MockitoCore.mockStatic(MockitoCore.java:134)
+	at org.mockito.Mockito.mockStatic(Mockito.java:2325)
+	at org.mockito.Mockito.mockStatic(Mockito.java:2262)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 39 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSave_NewProduct">
+                  </a> <!-- testSave_NewProduct -->
+                  <span class="method-name">testSave_NewProduct</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: Could not modify all classes [class braces.util.XJdbc]
+	at braces.dao.SanPhamDAOTest.testSave_NewProduct(SanPhamDAOTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClassStatic(InlineBytecodeGenerator.java:226)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClassStatic(TypeCachingBytecodeGenerator.java:108)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createStaticMock(InlineDelegateByteBuddyMockMaker.java:566)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createStaticMock(InlineByteBuddyMockMaker.java:83)
+	at org.mockito.internal.util.MockUtil.createStaticMock(MockUtil.java:202)
+	at org.mockito.internal.MockitoCore.mockStatic(MockitoCore.java:134)
+	at org.mockito.Mockito.mockStatic(Mockito.java:2325)
+	at org.mockito.Mockito.mockStatic(Mockito.java:2262)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 39 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Test_Suite-class-failed -->
+          <div class="suite-Project_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">braces.controller.TaiKhoanControllerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetRoleText_Admin">
+                  </a> <!-- testGetRoleText_Admin -->
+                  <span class="method-name">testGetRoleText_Admin</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetRoleText_NhanVien">
+                  </a> <!-- testGetRoleText_NhanVien -->
+                  <span class="method-name">testGetRoleText_NhanVien</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetRole_Default">
+                  </a> <!-- testGetRole_Default -->
+                  <span class="method-name">testGetRole_Default</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSearchTable_SearchName">
+                  </a> <!-- testGetSearchTable_SearchName -->
+                  <span class="method-name">testGetSearchTable_SearchName</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSearchTable_SearchRole">
+                  </a> <!-- testGetSearchTable_SearchRole -->
+                  <span class="method-name">testGetSearchTable_SearchRole</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetTrangThaiText_HoatDong">
+                  </a> <!-- testGetTrangThaiText_HoatDong -->
+                  <span class="method-name">testGetTrangThaiText_HoatDong</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetTrangThaiText_KhongHoatDong">
+                  </a> <!-- testGetTrangThaiText_KhongHoatDong -->
+                  <span class="method-name">testGetTrangThaiText_KhongHoatDong</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetTrangThai_HoatDong">
+                  </a> <!-- testGetTrangThai_HoatDong -->
+                  <span class="method-name">testGetTrangThai_HoatDong</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSave_Account">
+                  </a> <!-- testSave_Account -->
+                  <span class="method-name">testSave_Account</span>
+                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
+Mockito cannot mock this class: interface braces.dao.TaiKhoanDAO.
+
+If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
+
+
+Java               : 23
+JVM vendor name    : Amazon.com Inc.
+JVM vendor version : 23.0.2+7-FR
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 23.0.2+7-FR
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at braces.controller.TaiKhoanControllerTest.setUp(TaiKhoanControllerTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface braces.dao.TaiKhoanDAO, interface braces.dao.BaseDAO]
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	... 35 more
+Caused by: java.lang.IllegalStateException: 
+Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
+	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
+	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
+	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
+	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
+	at org.mockito.Mockito.mock(Mockito.java:2101)
+	at org.mockito.Mockito.mock(Mockito.java:2016)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
+	... 50 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Test_Suite-class-skipped -->
+          <div class="suite-Project_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">braces.util.ValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsEmail_Invalid">
+                  </a> <!-- testIsEmail_Invalid -->
+                  <span class="method-name">testIsEmail_Invalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsEmail_Valid">
+                  </a> <!-- testIsEmail_Valid -->
+                  <span class="method-name">testIsEmail_Valid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsEmpty_Null">
+                  </a> <!-- testIsEmpty_Null -->
+                  <span class="method-name">testIsEmpty_Null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsEmpty_NullInput">
+                  </a> <!-- testIsEmpty_NullInput -->
+                  <span class="method-name">testIsEmpty_NullInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsEmpty_Valid">
+                  </a> <!-- testIsEmpty_Valid -->
+                  <span class="method-name">testIsEmpty_Valid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsEmpty_Whitespace">
+                  </a> <!-- testIsEmpty_Whitespace -->
+                  <span class="method-name">testIsEmpty_Whitespace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsNumber_InvalidString">
+                  </a> <!-- testIsNumber_InvalidString -->
+                  <span class="method-name">testIsNumber_InvalidString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsNumber_Negative">
+                  </a> <!-- testIsNumber_Negative -->
+                  <span class="method-name">testIsNumber_Negative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsNumber_Valid">
+                  </a> <!-- testIsNumber_Valid -->
+                  <span class="method-name">testIsNumber_Valid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsPassword_NoDigit">
+                  </a> <!-- testIsPassword_NoDigit -->
+                  <span class="method-name">testIsPassword_NoDigit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsPassword_TooShort">
+                  </a> <!-- testIsPassword_TooShort -->
+                  <span class="method-name">testIsPassword_TooShort</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsPassword_Valid">
+                  </a> <!-- testIsPassword_Valid -->
+                  <span class="method-name">testIsPassword_Valid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsPhoneNumber_InvalidLength">
+                  </a> <!-- testIsPhoneNumber_InvalidLength -->
+                  <span class="method-name">testIsPhoneNumber_InvalidLength</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsPhoneNumber_Valid10Digits">
+                  </a> <!-- testIsPhoneNumber_Valid10Digits -->
+                  <span class="method-name">testIsPhoneNumber_Valid10Digits</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Test_Suite-class-passed -->
+          <div class="suite-Project_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">braces.util.FormatterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFormatNumber_LargeNumber">
+                  </a> <!-- testFormatNumber_LargeNumber -->
+                  <span class="method-name">testFormatNumber_LargeNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFormatVND_Standard">
+                  </a> <!-- testFormatVND_Standard -->
+                  <span class="method-name">testFormatVND_Standard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUnformatVND_Standard">
+                  </a> <!-- testUnformatVND_Standard -->
+                  <span class="method-name">testUnformatVND_Standard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Test_Suite-class-passed -->
+          <div class="suite-Project_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">braces.util.BCryptTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompare_Failure">
+                  </a> <!-- testCompare_Failure -->
+                  <span class="method-name">testCompare_Failure</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompare_Success">
+                  </a> <!-- testCompare_Success -->
+                  <span class="method-name">testCompare_Success</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Project_Test_Suite-class-passed -->
+        </div> <!-- panel Project_Test_Suite -->
+        <div panel-name="test-xml-Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\PC\Downloads\Project\Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Project Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Unit and Integration Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;braces.util&quot;/&gt;
+      &lt;package name=&quot;braces.controller&quot;/&gt;
+      &lt;package name=&quot;braces.dao&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;braces.util.BCryptTest&quot;/&gt;
+      &lt;class name=&quot;braces.util.FormatterTest&quot;/&gt;
+      &lt;class name=&quot;braces.util.ValidationTest&quot;/&gt;
+      &lt;class name=&quot;braces.util.BCrypt&quot;/&gt;
+      &lt;class name=&quot;braces.util.Formatter&quot;/&gt;
+      &lt;class name=&quot;braces.util.JTableExporter&quot;/&gt;
+      &lt;class name=&quot;braces.util.JTableUtilities&quot;/&gt;
+      &lt;class name=&quot;braces.util.MessageDialog&quot;/&gt;
+      &lt;class name=&quot;braces.util.PdfGenerator&quot;/&gt;
+      &lt;class name=&quot;braces.util.RandomGenerator&quot;/&gt;
+      &lt;class name=&quot;braces.util.Validation&quot;/&gt;
+      &lt;class name=&quot;braces.util.XAuth&quot;/&gt;
+      &lt;class name=&quot;braces.util.XIcon&quot;/&gt;
+      &lt;class name=&quot;braces.util.XJdbc&quot;/&gt;
+      &lt;class name=&quot;braces.util.XQuery&quot;/&gt;
+      &lt;class name=&quot;braces.controller.TaiKhoanControllerTest&quot;/&gt;
+      &lt;class name=&quot;braces.controller.BaseController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.CTPhieuNhapController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.CTPhieuXuatController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.DungLuongRAMController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.DungLuongROMController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.KhachHangController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.KhuVucKhoController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.LichSuController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.MauSacController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.NhaCungCapController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.PhienBanController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.PhieuNhapController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.PhieuXuatController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.SanPhamController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.TaiKhoanController&quot;/&gt;
+      &lt;class name=&quot;braces.controller.ThuocTinhSanPhamController&quot;/&gt;
+      &lt;class name=&quot;braces.dao.SanPhamDAOTest&quot;/&gt;
+      &lt;class name=&quot;braces.dao.BaseDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.CTPhieuNhapDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.CTPhieuXuatDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.DungLuongRAMDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.DungLuongROMDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.KhachHangDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.KhuVucKhoDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.LichSuDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.MauSacDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.NhaCungCapDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.PhienBanDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.PhieuNhapDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.PhieuXuatDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.SanPhamDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.TaiKhoanDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.ThongKeDAO&quot;/&gt;
+      &lt;class name=&quot;braces.dao.ThuocTinhSanPhamDAO&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Unit and Integration Tests --&gt;
+&lt;/suite&gt; &lt;!-- Project Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Project Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Unit and Integration Tests (50 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Project Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Project Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Project_Test_Suite');
+function tableData_Project_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(32);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCompare_Failure')
+data.setCell(0, 2, 'braces.util.BCryptTest')
+data.setCell(0, 3, 93);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCompare_Success')
+data.setCell(1, 2, 'braces.util.BCryptTest')
+data.setCell(1, 3, 53);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDeleteById')
+data.setCell(2, 2, 'braces.dao.SanPhamDAOTest')
+data.setCell(2, 3, 12);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testFindByKhuVuc_Filter')
+data.setCell(3, 2, 'braces.dao.SanPhamDAOTest')
+data.setCell(3, 3, 8);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSave_NewProduct')
+data.setCell(4, 2, 'braces.dao.SanPhamDAOTest')
+data.setCell(4, 3, 8);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testFindAll_Retrieve')
+data.setCell(5, 2, 'braces.dao.SanPhamDAOTest')
+data.setCell(5, 3, 7);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testIsEmpty_Valid')
+data.setCell(6, 2, 'braces.util.ValidationTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testIsPassword_NoDigit')
+data.setCell(7, 2, 'braces.util.ValidationTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testFormatNumber_LargeNumber')
+data.setCell(8, 2, 'braces.util.FormatterTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testIsPassword_TooShort')
+data.setCell(9, 2, 'braces.util.ValidationTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testIsPhoneNumber_Valid10Digits')
+data.setCell(10, 2, 'braces.util.ValidationTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testIsEmail_Invalid')
+data.setCell(11, 2, 'braces.util.ValidationTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testIsEmail_Valid')
+data.setCell(12, 2, 'braces.util.ValidationTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testFormatVND_Standard')
+data.setCell(13, 2, 'braces.util.FormatterTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testIsEmpty_Whitespace')
+data.setCell(14, 2, 'braces.util.ValidationTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testUnformatVND_Standard')
+data.setCell(15, 2, 'braces.util.FormatterTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testIsNumber_InvalidString')
+data.setCell(16, 2, 'braces.util.ValidationTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testIsPassword_Valid')
+data.setCell(17, 2, 'braces.util.ValidationTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testIsPhoneNumber_InvalidLength')
+data.setCell(18, 2, 'braces.util.ValidationTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testIsEmpty_NullInput')
+data.setCell(19, 2, 'braces.util.ValidationTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testIsNumber_Negative')
+data.setCell(20, 2, 'braces.util.ValidationTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testIsEmpty_Null')
+data.setCell(21, 2, 'braces.util.ValidationTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testIsNumber_Valid')
+data.setCell(22, 2, 'braces.util.ValidationTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testGetTrangThaiText_HoatDong')
+data.setCell(23, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testGetSearchTable_SearchName')
+data.setCell(24, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testGetRoleText_NhanVien')
+data.setCell(25, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testGetRole_Default')
+data.setCell(26, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testGetTrangThaiText_KhongHoatDong')
+data.setCell(27, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testGetTrangThai_HoatDong')
+data.setCell(28, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testGetSearchTable_SearchRole')
+data.setCell(29, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testGetRoleText_Admin')
+data.setCell(30, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testSave_Account')
+data.setCell(31, 2, 'braces.controller.TaiKhoanControllerTest')
+data.setCell(31, 3, 0);
+window.suiteTableData['Project_Test_Suite']= { tableData: data, tableDiv: 'times-div-Project_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 184 ms</span>
+              <div id="times-div-Project_Test_Suite">
+              </div> <!-- times-div-Project_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Project Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">braces.util.BCryptTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCompare_Failure</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCompare_Success</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">braces.controller.TaiKhoanControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">150 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">627 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">628 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">628 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">629 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">629 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">631 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">631 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">braces.dao.SanPhamDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteById</span>
+                <span class="method-start">631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFindAll_Retrieve</span>
+                <span class="method-start">644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFindByKhuVuc_Filter</span>
+                <span class="method-start">652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSave_NewProduct</span>
+                <span class="method-start">662 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">braces.util.FormatterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFormatNumber_LargeNumber</span>
+                <span class="method-start">671 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFormatVND_Standard</span>
+                <span class="method-start">673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUnformatVND_Standard</span>
+                <span class="method-start">674 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">braces.util.ValidationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIsEmail_Invalid</span>
+                <span class="method-start">675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsEmpty_Null</span>
+                <span class="method-start">676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsEmail_Valid</span>
+                <span class="method-start">676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsEmpty_NullInput</span>
+                <span class="method-start">677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsEmpty_Valid</span>
+                <span class="method-start">677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsEmpty_Whitespace</span>
+                <span class="method-start">678 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsNumber_InvalidString</span>
+                <span class="method-start">678 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsPassword_NoDigit</span>
+                <span class="method-start">679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsNumber_Negative</span>
+                <span class="method-start">679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsNumber_Valid</span>
+                <span class="method-start">679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsPhoneNumber_InvalidLength</span>
+                <span class="method-start">680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsPassword_TooShort</span>
+                <span class="method-start">680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsPassword_Valid</span>
+                <span class="method-start">680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsPhoneNumber_Valid10Digits</span>
+                <span class="method-start">682 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

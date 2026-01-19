@@ -1,0 +1,30 @@
+TEST NO.,TESTCASE NAME,TEST DATA,STEPS TO EXCUTE,EXPECTED RESULTS,ACTUAL RESULTS,STATUS (PASS / FAIL),DESCRIPTION
+TC001,Validation.isEmpty - Null Input,Input: null,1. Call Validation.isEmpty(null),Return true,,,Verify handling of null input.
+TC002,Validation.isEmpty - Whitespace Input,"Input: ""   ""","1. Call Validation.isEmpty(""   "")",Return true,,,Verify handling of string with only whitespace.
+TC003,Validation.isEmpty - Valid Input,"Input: ""data""","1. Call Validation.isEmpty(""data"")",Return false,,,Verify handling of valid non-empty string.
+TC004,Validation.isPassword - Too Short,"Input: ""pass1""","1. Call Validation.isPassword(""pass1"")",Return false,,,Password must be at least 8 characters.
+TC005,Validation.isPassword - No Digit,"Input: ""password""","1. Call Validation.isPassword(""password"")",Return false,,,Password must contain at least one digit.
+TC006,Validation.isPassword - Valid,"Input: ""password123""","1. Call Validation.isPassword(""password123"")",Return true,,,Valid password meets all criteria.
+TC007,Validation.isEmail - Invalid Format,"Input: ""abc.com""","1. Call Validation.isEmail(""abc.com"")",Return false,,,Email must contain @ symbol.
+TC008,Validation.isEmail - Valid Format,"Input: ""test@example.com""","1. Call Validation.isEmail(""test@example.com"")",Return true,,,Valid email format.
+TC009,Validation.isNumber - Invalid String,"Input: ""abc""","1. Call Validation.isNumber(""abc"")",Return false,,,Non-numeric string should return false.
+TC010,Validation.isNumber - Negative,"Input: ""-5""","1. Call Validation.isNumber(""-5"")",Return false,,,Negative numbers check (logic specific to this app).
+TC011,Validation.isNumber - Valid,"Input: ""100""","1. Call Validation.isNumber(""100"")",Return true,,,Valid positive integer string.
+TC012,Validation.isPhoneNumber - Invalid Length,"Input: ""12345""","1. Call Validation.isPhoneNumber(""12345"")",Return false,,,Phone number too short.
+TC013,Validation.isPhoneNumber - Valid 10 Digits,"Input: ""0901234567""","1. Call Validation.isPhoneNumber(""0901234567"")",Return true,,,Valid 10-digit phone number.
+TC014,Formatter.formatVND - Standard,Input: 1000000,1. Call Formatter.formatVND(1000000),"Return ""1,000,000VNĐ""",,,Format double to currency string.
+TC015,Formatter.unformatVND - Standard,"Input: ""1,000,000VNĐ""","1. Call Formatter.unformatVND(""1,000,000VNĐ"")",Return 1000000.0,,,Parse currency string to double.
+TC016,Formatter.formatNumber - Large Number,Input: 1000000,1. Call Formatter.formatNumber(1000000),"Return ""1M""",,,Format large number with M suffix.
+TC017,BCrypt.compare - Success,"Password: ""pass"", Hash: (generated)","1. Generate hash for ""pass""
+2. Call BCrypt.compare(""pass"", hash)",Return true,,,Verify correct password matches hash.
+TC018,BCrypt.compare - Failure,"Password: ""wrong"", Hash: (of ""pass"")","1. Generate hash for ""pass""
+2. Call BCrypt.compare(""wrong"", hash)",Return false,,,Verify incorrect password does not match.
+TC019,TaiKhoanController.getRoleText - Admin,Input: 0,1. Call getRoleText(0),"Return ""Admin""",,,Convert role ID 0 to string.
+TC020,TaiKhoanController.getRoleText - NhanVien,Input: 1,1. Call getRoleText(1),"Return ""Nhân viên""",,,Convert role ID 1 to string.
+TC021,TaiKhoanController.getRole - Admin,"Input: ""Admin"" (implicit default)","1. Call getRole(""RandomString"")",Return 0,,,Default case returns 0.
+TC022,TaiKhoanController.getSearchTable - Search Name,"Text: ""Alice"", Type: ""Tên""","1. Mock list with [Alice, Bob]
+2. Call getSearchTable(""Alice"", ""Tên"")",Return list containing only [Alice],,,Filter list by name.
+TC023,TaiKhoanController.getSearchTable - Search Role,"Text: ""Admin"", Type: ""Vai trò""","1. Mock list with [User(Role=0), User(Role=1)]
+2. Call getSearchTable(""Admin"", ""Vai trò"")",Return list containing users with Role=0,,,Filter list by role description.
+TC024,SanPhamDAO.findAll - Retrieve,Database has records,1. Call findAll(),Return List<SanPham> (not empty),,,Retrieve all products from DB.
+TC025,SanPhamDAO.findByKhuVuc - Filter,Input: KhuVucID = 1,1. Call findByKhuVuc(1),Return List<SanPham> where maKhuVucKho = 1,,,Filter products by warehouse area.

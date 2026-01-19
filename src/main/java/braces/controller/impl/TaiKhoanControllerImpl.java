@@ -70,7 +70,6 @@ public class TaiKhoanControllerImpl implements TaiKhoanController {
     public List<TaiKhoan> getSearchTable(String text, String searchType) {
         text = text.toLowerCase();
         List<TaiKhoan> result = new ArrayList<>();
-
         switch (searchType) {
             case "Tất cả" -> {
                 for (TaiKhoan e : this.getAll()) {

@@ -6,6 +6,9 @@ import java.util.regex.Pattern;
 public class Validation {
 
     public static Boolean isEmpty(String input) {
+        if (input == null) {
+            return true;
+        }
         if (input.trim() == null) {
             return true;
         }

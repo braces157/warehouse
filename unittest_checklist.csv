@@ -1,0 +1,23 @@
+PACKAGE / NAMESPACE,CLASS NAME,METHOD NAME,DESCRIPTION
+braces.util,Validation,isEmpty(String),Verify if a string is null or empty after trimming.
+braces.util,Validation,isPassword(String),"Validate password complexity (at least 8 chars, 1 letter, 1 number)."
+braces.util,Validation,isEmail(String),Validate email format using regex.
+braces.util,Validation,isNumber(String),Verify if a string can be parsed into a non-negative Long.
+braces.util,Validation,isPhoneNumber(String),"Validate phone number formats (10 digits, or with dashes/parentheses)."
+braces.util,Formatter,formatVND(double),Test formatting a double to VNĐ currency string.
+braces.util,Formatter,unFormatDate(Object),Test parsing a date string back to a Date object.
+braces.util,Formatter,unformatVND(String),Test parsing a VNĐ string back to a double.
+braces.util,Formatter,FormatDate(Date),Test formatting a Date object to dd/MM/yyyy string.
+braces.util,Formatter,formatNumber(double),"Test formatting large numbers with suffixes (K, M, B, etc.)."
+braces.util,BCrypt,"hashpw(String, byte[])",Test password hashing with a salt.
+braces.util,BCrypt,"compare(String, String)",Verify if a plain password matches a hashed string.
+braces.controller.impl,TaiKhoanControllerImpl,"getSearchTable(String, String)","Test filtering logic for different search types (Name, Role, Status, etc.)."
+braces.controller.impl,TaiKhoanControllerImpl,getRoleText(Integer),Verify conversion of integer role ID to string description.
+braces.controller.impl,TaiKhoanControllerImpl,getTrangThaiText(Integer),Verify conversion of integer status ID to string description.
+braces.controller.impl,TaiKhoanControllerImpl,getRole(String),Verify conversion of role string description back to integer ID.
+braces.controller.impl,TaiKhoanControllerImpl,getTrangThai(String),Verify conversion of status string description back to integer ID.
+braces.controller.impl,TaiKhoanControllerImpl,save(TaiKhoan),Test saving an account (delegation to DAO).
+braces.dao.impl,SanPhamDAOImpl,findAll(),Test retrieving all products from the database.
+braces.dao.impl,SanPhamDAOImpl,save(SanPham),Test inserting (new ID) and updating (existing ID) a product.
+braces.dao.impl,SanPhamDAOImpl,deleteById(Integer),Test deleting a product by ID.
+braces.dao.impl,SanPhamDAOImpl,findByKhuVuc(Integer),Test filtering products by warehouse area ID.
