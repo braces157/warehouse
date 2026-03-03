@@ -1,0 +1,5 @@
+braces\controller\TaiKhoanControllerTest.class
+braces\dao\SanPhamDAOTest.class
+braces\util\BCryptTest.class
+braces\util\FormatterTest.class
+braces\util\ValidationTest.class

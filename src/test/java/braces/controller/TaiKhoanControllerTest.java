@@ -20,7 +20,6 @@ public class TaiKhoanControllerTest {
 
     @BeforeMethod
     public void setUp() {
-        // Manual mocking to avoid annotation processing issues if any
         taiKhoanDAO = mock(TaiKhoanDAO.class);
         controller = new TaiKhoanControllerImpl(taiKhoanDAO);
     }
@@ -49,9 +48,9 @@ public class TaiKhoanControllerTest {
         user1.setTenNv("Alice");
         TaiKhoan user2 = new TaiKhoan();
         user2.setTenNv("Bob");
-        
+
         when(taiKhoanDAO.findAll()).thenReturn(Arrays.asList(user1, user2));
-        
+
         List<TaiKhoan> result = controller.getSearchTable("Alice", "Tên");
 
         Assert.assertEquals(result.size(), 1);
